@@ -5,33 +5,49 @@
   STOI-Enhance-Net
   <br>
 </h1>
-
-<h4 align="center" font-weight:bold;">Speech enhancement network based on STOI score loss function</h4>
+<h4 align="center" font-weight:bold;">Speech Enhancement Network Based On STOI Score Loss Function<br>基于STOI语音评价指标损失函数的语音增强网络</h4>
 <p align="center">
 <img src="https://img.shields.io/badge/license-MIT-%23373737">
 <img src="https://img.shields.io/badge/plantform-Tensorflow-lightgrey">
 </p>
 
+
 <p align="center">
 <img src="https://github.com/Reagan1947/latex2word/blob/master/exp_pic.png">
 </p>
 
-## Dataset 数据集
+## 1. Dataset 数据集
 
-If you are **unable** to use mini window or top window button is **normal**.
+##### Microsoft Scalable Noisy Speech Dataset (MS-SNSD)
 
-如果不能使用最小化或者置顶窗口按钮这是正常的。
+- This dataset contains a large collection of clean speech files and variety of environmental noise files in .wav format sampled at 16 kHz.
 
-**🎉In [release](https://github.com/Reagan1947/latex2word/releases), you can obtain the EXE execution file by decompressing the rar file. Currently, only x64 windows operating system is supported.**
+- The main application of this dataset is to train Deep Neural Network (DNN) models to suppress background noise. But it can be used for other audio and speech applications.
 
+- We provide the recipe to mix clean speech and noise at various signal to noise ratio (SNR) conditions to generate large noisy speech dataset.
 
-**🎉在[release](https://github.com/Reagan1947/latex2word/releases)中下载rar文件解压即可获得exe执行文件，目前仅支持x64-windows操作系统。**
+- The SNR conditions and the number of hours of data required can be configured depending on the application requirements.
+- More Infor: https://github.com/microsoft/MS-SNSD
 
-## Key Feature
+## 2. Based on 基于
 
-It make you to input latex math equation to word more easy. It looks like a extentions of word which is same like pages math equation function. Your Latex formula will be coverd to MathML.
+##### STOI 
 
-它能够让您方便的使用Latex公式表达式在Office Word中输入公式。它的功能和Apple公司开发的Pages上的公式输入功能类似。您的Latex公式会被转换为MathML公式。
+> Existing objective speech-intelligibility measures are suitable for several types of degradation, however, it turns out that they are less appropriate for methods where noisy speech is processed by a time-frequency (TF) weighting, e.g., noise reduction and speech separation. In this paper, we present an objective intelligibility measure, which shows high correlation (rho=0.95) with the intelligibility of both noisy, and TF-weighted noisy speech. The proposed method shows significantly better performance than three other, more sophisticated, objective measures. Furthermore, it is based on an intermediate intelligibility measure for short-time (approximately 400 ms) TF-regions, and uses a simple DFT-based TF-decomposition. In addition, a free Matlab implementation is provided. More Infor: https://ieeexplore.ieee.org/document/5495701
+
+##### Idsegan
+
+> This is the repository of the DSEGAN, ISEGAN, (and the baseline SEGAN) in our original paper:
+>
+> H. Phan, I. V. McLoughlin, L. Pham, O. Y. Chén, P. Koch, M. De Vos, and A. Mertins, "[*Improving GANs for Speech Enhancement*](https://arxiv.org/pdf/2001.05532.pdf)," IEEE Signal Processing Letters, 2020. *(accepted)*
+>
+> ISEGAN (Iterated SEGAN) and DSEGAN (Deep SEGAN) were built upon the SEGAN proposed by [Pascual *et al.*](https://arxiv.org/abs/1703.09452) and SEGAN repository from [santi-pdp](https://github.com/santi-pdp/segan). Different from SEGAN with a single generator, ISEGAN and DSEGAN have multiple generators which are chained to perform multi-stage enhancement mapping:
+>
+> [![idsegan.png](https://github.com/pquochuy/idsegan/raw/6cc2320339f2f0781caceb4a912c77401fdd9471/assets/idsegan.png)](https://github.com/pquochuy/idsegan/blob/6cc2320339f2f0781caceb4a912c77401fdd9471/assets/idsegan.png)
+>
+> The enhacement result of one generator is supposed to be further enhanced/corrected by the next generator in the chain. DSEGAN's generators are independent while ISEGAN's generators share parameters. Similar to SEGAN, the generators are based on fully convolutional architecture and receive raw speech waveforms to accomplish speech enhancement:
+>
+> [![generator](https://github.com/pquochuy/idsegan/raw/6cc2320339f2f0781caceb4a912c77401fdd9471/assets/generator.png)](https://github.com/pquochuy/idsegan/blob/6cc2320339f2f0781caceb4a912c77401fdd9471/assets/generator.png)
 
 ## Getting Started
 
