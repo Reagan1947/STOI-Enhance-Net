@@ -13,7 +13,7 @@
 
 
 <p align="center">
-<img src="https://github.com/Reagan1947/latex2word/blob/master/exp_pic.png">
+<img src="https://github.com/Reagan1947/STOI-Enhance-Net/blob/main/README_source/NNSpeechEnhancement_header.jpg?raw=true.png">
 </p>
 
 ## 1. Dataset 数据集
