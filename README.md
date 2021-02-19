@@ -6,11 +6,10 @@
   <br>
 </h1>
 
-<h4 align="center" font-weight:bold;">Speech enhancement network based on STOI score loss function</br>
-                                     </br></h4>
+<h4 align="center" font-weight:bold;">Speech enhancement network based on STOI score loss function</h4>
 <p align="center">
 <img src="https://img.shields.io/badge/license-MIT-%23373737">
-<img src="https://img.shields.io/badge/plantform-electron-lightgrey">
+<img src="https://img.shields.io/badge/plantform-Tensorflow-lightgrey">
 </p>
 
 <p align="center">
