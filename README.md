@@ -29,6 +29,8 @@
 - The SNR conditions and the number of hours of data required can be configured depending on the application requirements.
 - More Infor: https://github.com/microsoft/MS-SNSD
 
+
+
 ## 2. Based on 基于
 
 ##### STOI 
@@ -37,7 +39,7 @@
 >
 > More Infor: https://ieeexplore.ieee.org/document/5495701
 
-##### Idsegan
+##### IDSEGAN
 
 > This is the repository of the DSEGAN, ISEGAN, (and the baseline SEGAN) in our original paper:
 >
@@ -45,54 +47,16 @@
 >
 > More Infor: https://github.com/pquochuy/idsegan
 
-## Getting Started
 
-This program is crate base on electron. You could try to build by the sorce file which I have puted in code.
 
-这个小程序基于npm上的electron开发，你可以尝试使用[code](https://github.com/Reagan1947/latex2word)中的源文件基于electron进行运行。
+## 3. Statue 项目进度
 
-## Dependency
+1. Dataset Preparation 数据集准备
 
-This program id build base other githubprogram, based program is here:
 
-这个小程序的开发参考了一些其他的github项目，如下是参考的项目：
 
-1. [Latex2Equation](https://github.com/idf/LaTeX2Word-Equation)
-2. [MathJax](https://www.mathjax.org/)
+## 4. Dependencies 依赖
 
-## Note&BUG
-
-The source file does not include the required parts such as fontawesome mathjax.
-
-At present, there are the following bugs:
-
-源文件中并没有包括需要的部分例如fontawesome MathJax的源文件。
-
-目前存在如下的Bug：
-
-1. Window cannot be enlarged or set at the top   //无法放大或置顶窗口
-
-2. RAM memory utilization is too high   //RAM内存使用率过高
-
-3. The installation package did not delete unnecessary support files. The files are too large after electronic packaging   //安装包没有删除不需要的支持文件，electron打包以后文件过大
-
-## To Do List
-
-- [ ]  Finish mini and top window function.
-- [ ] Rebuild it by VUE
-
-## Versioning
-
-- 2020/03/13  v1.0-beta 
-
-## Authors
-
-* **Reagan**  *China Student* - [Reagan1947](https://github.com/Reagan1947)
-
-Like this program give me a star ⭐！Danke！
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-项目许可证为MIT许可证，你可以在[LICENSE](LICENSE)文件中查看。
+- tensorflow_gpu == 1.9
+- numpy== 1.1.3
+- scipy== 1.0.0
