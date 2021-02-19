@@ -33,7 +33,9 @@
 
 ##### STOI 
 
-> Existing objective speech-intelligibility measures are suitable for several types of degradation, however, it turns out that they are less appropriate for methods where noisy speech is processed by a time-frequency (TF) weighting, e.g., noise reduction and speech separation. In this paper, we present an objective intelligibility measure, which shows high correlation (rho=0.95) with the intelligibility of both noisy, and TF-weighted noisy speech. The proposed method shows significantly better performance than three other, more sophisticated, objective measures. Furthermore, it is based on an intermediate intelligibility measure for short-time (approximately 400 ms) TF-regions, and uses a simple DFT-based TF-decomposition. In addition, a free Matlab implementation is provided. More Infor: https://ieeexplore.ieee.org/document/5495701
+> Existing objective speech-intelligibility measures are suitable for several types of degradation, however, it turns out that they are less appropriate for methods where noisy speech is processed by a time-frequency (TF) weighting, e.g., noise reduction and speech separation. In this paper, we present an objective intelligibility measure, which shows high correlation (rho=0.95) with the intelligibility of both noisy, and TF-weighted noisy speech. The proposed method shows significantly better performance than three other, more sophisticated, objective measures. Furthermore, it is based on an intermediate intelligibility measure for short-time (approximately 400 ms) TF-regions, and uses a simple DFT-based TF-decomposition. In addition, a free Matlab implementation is provided. 
+>
+> More Infor: https://ieeexplore.ieee.org/document/5495701
 
 ##### Idsegan
 
@@ -41,13 +43,7 @@
 >
 > H. Phan, I. V. McLoughlin, L. Pham, O. Y. Chén, P. Koch, M. De Vos, and A. Mertins, "[*Improving GANs for Speech Enhancement*](https://arxiv.org/pdf/2001.05532.pdf)," IEEE Signal Processing Letters, 2020. *(accepted)*
 >
-> ISEGAN (Iterated SEGAN) and DSEGAN (Deep SEGAN) were built upon the SEGAN proposed by [Pascual *et al.*](https://arxiv.org/abs/1703.09452) and SEGAN repository from [santi-pdp](https://github.com/santi-pdp/segan). Different from SEGAN with a single generator, ISEGAN and DSEGAN have multiple generators which are chained to perform multi-stage enhancement mapping:
->
-> [![idsegan.png](https://github.com/pquochuy/idsegan/raw/6cc2320339f2f0781caceb4a912c77401fdd9471/assets/idsegan.png)](https://github.com/pquochuy/idsegan/blob/6cc2320339f2f0781caceb4a912c77401fdd9471/assets/idsegan.png)
->
-> The enhacement result of one generator is supposed to be further enhanced/corrected by the next generator in the chain. DSEGAN's generators are independent while ISEGAN's generators share parameters. Similar to SEGAN, the generators are based on fully convolutional architecture and receive raw speech waveforms to accomplish speech enhancement:
->
-> [![generator](https://github.com/pquochuy/idsegan/raw/6cc2320339f2f0781caceb4a912c77401fdd9471/assets/generator.png)](https://github.com/pquochuy/idsegan/blob/6cc2320339f2f0781caceb4a912c77401fdd9471/assets/generator.png)
+> More Infor: https://github.com/pquochuy/idsegan
 
 ## Getting Started
 
