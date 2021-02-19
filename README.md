@@ -6,8 +6,8 @@
   <br>
 </h1>
 
-<h4 align="center" font-weight:bold;">Cvoer your Latex formula to Word MathML Equation.</br>
-                                     将您的Latex公式转换为Word支持的MathML格式</br></h4>
+<h4 align="center" font-weight:bold;">Speech enhancement network based on STOI score loss function</br>
+                                     </br></h4>
 <p align="center">
 <img src="https://img.shields.io/badge/license-MIT-%23373737">
 <img src="https://img.shields.io/badge/plantform-electron-lightgrey">
